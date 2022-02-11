@@ -1,0 +1,66 @@
+@import "./colors";
+
+body {
+    margin: 0;
+    background-color: $color-one;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 0;
+    background-color: $color-four;
+    @media(min-width: 1060px) {
+        display: grid;
+        grid-template: auto / 600px auto;
+        padding: 0 10px;
+    }
+    .logo {
+        background-color: white;
+        margin: 0 auto;
+    }
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 0;
+    
+    a {
+        color: white;
+    }
+    .menu {
+        text-align: center;
+        padding: 10px 5px;
+        font-size: 17px;
+        @media(min-width: 600px) {
+            font-size: 23px;
+        }    
+        @media(min-width: 1060px) {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 22px;
+        }    
+    }    
+    .menu:hover {
+        background-color: $color-three;
+    }
+    .active {
+        color: $color-one;
+        font-size: 18px;
+        @media(min-width: 600px) {
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+    }
+}
