@@ -60,12 +60,74 @@ nav .menu:hover {
   background-color: #183bf0;
 }
 nav .active {
-  color: #d4e4f7;
   font-size: 18px;
+}
+nav .active a {
+  color: #d4e4f7;
 }
 @media (min-width: 600px) {
   nav .active {
     font-size: 24px;
     letter-spacing: 1px;
   }
+}
+
+main {
+  margin: 0;
+}
+@media (min-width: 600px) {
+  main {
+    margin: 60px auto;
+    width: 80vw;
+  }
+}
+
+.info {
+  background-color: #236ab9;
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 15px;
+}
+@media (min-width: 600px) {
+  .info {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1060px) {
+  .info {
+    padding: 40px;
+    max-width: 1400px;
+    display: grid;
+    grid-template: auto auto auto auto/auto 1fr;
+    grid-template-areas: "H P" "F P" "S P" "T T";
+  }
+  .info h1 {
+    grid-area: H;
+  }
+  .info section:nth-child(2) {
+    grid-area: F;
+    margin-right: 40px;
+    margin-bottom: 10px;
+  }
+  .info section:nth-child(4) {
+    grid-area: S;
+    margin-right: 40px;
+    margin-bottom: 10px;
+  }
+  .info section:nth-child(5) {
+    grid-area: T;
+  }
+  .info .photo {
+    grid-area: P;
+    width: 250px;
+    margin: auto 0 10px;
+  }
+}
+.info section {
+  margin-bottom: 15px;
+}
+.info .photo {
+  margin-bottom: 15px;
 }/*# sourceMappingURL=style.css.map */
