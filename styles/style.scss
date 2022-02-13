@@ -69,6 +69,11 @@ nav {
 
 main {
     margin: 0;
+    .title {
+        text-align: center;
+        color: $color-five;
+        text-decoration: underline;
+    }
     @media(min-width: 600px) {
         margin: 60px auto;
         width: 80vw;
@@ -122,5 +127,33 @@ main {
     }
     .photo {
         margin-bottom: 15px;
+    }
+}
+
+.reviews {
+    background-color: $color-two;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 15px;
+    max-width: 1400px;
+    @media(min-width: 600px) {
+        padding: 30px 15px 15px;
+    }
+    @media(min-width: 1060px) {
+        margin-right: 20vw;        
+    }
+    &:nth-child(odd) {
+        background-color: $color-three;
+        @media(min-width: 1060px) {
+            margin-left: 20vw;
+            margin-right: 0;
+        }
+    }
+    section {
+        margin-bottom: 15px;
+    }
+    & + & {
+        margin-top: 25px;
     }
 }

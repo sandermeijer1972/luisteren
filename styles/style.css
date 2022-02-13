@@ -75,6 +75,11 @@ nav .active a {
 main {
   margin: 0;
 }
+main .title {
+  text-align: center;
+  color: #190934;
+  text-decoration: underline;
+}
 @media (min-width: 600px) {
   main {
     margin: 60px auto;
@@ -130,4 +135,38 @@ main {
 }
 .info .photo {
   margin-bottom: 15px;
+}
+
+.reviews {
+  background-color: #236ab9;
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 15px;
+  max-width: 1400px;
+}
+@media (min-width: 600px) {
+  .reviews {
+    padding: 30px 15px 15px;
+  }
+}
+@media (min-width: 1060px) {
+  .reviews {
+    margin-right: 20vw;
+  }
+}
+.reviews:nth-child(odd) {
+  background-color: #183bf0;
+}
+@media (min-width: 1060px) {
+  .reviews:nth-child(odd) {
+    margin-left: 20vw;
+    margin-right: 0;
+  }
+}
+.reviews section {
+  margin-bottom: 15px;
+}
+.reviews + .reviews {
+  margin-top: 25px;
 }/*# sourceMappingURL=style.css.map */
