@@ -80,6 +80,67 @@ main {
     }
 }
 
+.listening {
+    background-color: $color-two;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 15px;
+    @media(min-width: 600px) {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    @media(min-width: 1060px) {
+        padding: 40px;
+        max-width: 1400px;
+        display: grid;
+        grid-template: auto auto auto auto auto / auto 1fr;
+        grid-template-areas:
+        "A L"
+        "B L"
+        "C L"
+        "D D"
+        "E E";
+        h1 {
+            grid-area: A;
+        }
+        section:nth-child(2) {
+            grid-area: B;
+            margin-right: 40px;
+            margin-bottom: 10px;
+        }
+        section:nth-child(4) {
+            grid-area: C;
+            margin-right: 40px;
+            margin-bottom: 10px;
+        }
+        section:nth-child(5) {
+            grid-area: D;
+        }
+        section:nth-child(6) {
+            grid-area: E;
+        }
+        .logo {
+            grid-area: L;
+            height: 200px;
+            margin: auto auto 15px;           
+        }
+    }
+    section {
+        margin-bottom: 15px;
+    }
+    .logo {
+        width: 200px;
+        background-color: white;
+        border: 5px solid $color-one;
+        border-radius: 50%;
+        margin: 0 auto 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 .info {
     background-color: $color-two;
     color: white;

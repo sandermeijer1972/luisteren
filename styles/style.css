@@ -87,6 +87,66 @@ main .title {
   }
 }
 
+.listening {
+  background-color: #236ab9;
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 15px;
+}
+@media (min-width: 600px) {
+  .listening {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1060px) {
+  .listening {
+    padding: 40px;
+    max-width: 1400px;
+    display: grid;
+    grid-template: auto auto auto auto auto/auto 1fr;
+    grid-template-areas: "A L" "B L" "C L" "D D" "E E";
+  }
+  .listening h1 {
+    grid-area: A;
+  }
+  .listening section:nth-child(2) {
+    grid-area: B;
+    margin-right: 40px;
+    margin-bottom: 10px;
+  }
+  .listening section:nth-child(4) {
+    grid-area: C;
+    margin-right: 40px;
+    margin-bottom: 10px;
+  }
+  .listening section:nth-child(5) {
+    grid-area: D;
+  }
+  .listening section:nth-child(6) {
+    grid-area: E;
+  }
+  .listening .logo {
+    grid-area: L;
+    height: 200px;
+    margin: auto auto 15px;
+  }
+}
+.listening section {
+  margin-bottom: 15px;
+}
+.listening .logo {
+  width: 200px;
+  background-color: white;
+  border: 5px solid #d4e4f7;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .info {
   background-color: #236ab9;
   color: white;
