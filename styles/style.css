@@ -131,6 +131,7 @@ main .title {
     grid-area: L;
     height: 200px;
     margin: auto auto 15px;
+    align-content: flex-end;
   }
 }
 .listening section {
@@ -215,11 +216,11 @@ main .title {
     margin-right: 20vw;
   }
 }
-.reviews:nth-child(odd) {
+.reviews:nth-child(even) {
   background-color: #183bf0;
 }
 @media (min-width: 1060px) {
-  .reviews:nth-child(odd) {
+  .reviews:nth-child(even) {
     margin-left: 20vw;
     margin-right: 0;
   }
@@ -229,4 +230,72 @@ main .title {
 }
 .reviews + .reviews {
   margin-top: 25px;
+}
+
+.contact {
+  background-color: #236ab9;
+  color: white;
+  max-width: 1400px;
+}
+@media (min-width: 600px) {
+  .contact {
+    padding: 10px;
+  }
+}
+.contact a {
+  color: white;
+}
+.contact .adres {
+  font-size: 18px;
+  margin: 0 25px;
+  padding-top: 10px;
+}
+.contact .adres h2 {
+  margin: 10px 0;
+}
+.contact .adres .facebook a {
+  font-size: 42px;
+}
+.contact form {
+  background-color: #183bf0;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  margin: 25px auto;
+  max-width: 600px;
+}
+.contact form input, .contact form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  font-size: 16px;
+  font-family: monospace;
+  background-color: #d4e4f7;
+}
+.contact form button {
+  padding: 15px;
+  background-color: #190934;
+  color: white;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+.contact form button:hover {
+  padding: 12px;
+  font-size: 24px;
+}
+.contact .succes {
+  background-color: #183bf0;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  margin: 25px auto;
+  max-width: 600px;
+  font-size: 24px;
+  line-height: 1.5;
 }/*# sourceMappingURL=style.css.map */

@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="./favicon-16x16.png">
     <title>Luisterkind Werker Marieke Onderwater</title>
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/3007742baa.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -22,8 +23,41 @@
             <div class="menu active"><a href="contact.html">Contact</a></div>
         </nav>              
     </header>
-    <main>        
-        
+    <main>
+        <article class="contact">
+            <section class="adres">
+                <h2>
+                    Contact:
+                </h2>
+                <p>
+                    <div>Marieke Onderwater</div>
+                    <div>Haagwinde 16</div>
+                    <div>2435 WG Zevenhoven</div>
+                </p>
+                <p>
+                    <i class="far fa-envelope"></i> mariekeonderwater@hotmail.com
+                </p>              
+                <div class="facebook">
+                    <a href="https://www.facebook.com/Mariekeonderwater0712" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <!-- https://www.facebook.com/Mariekeonderwater0712  -->
+                </div>
+                <p>
+                    Je kan ook onderstaand formulier invullen om in contact te komen met Marieke.
+                </p>                
+            </section>
+            <form action="https://formsubmit.co/d207706da69d2e5af926c3ecfff61e12" method="POST">
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display: none;">
+                <!-- Disable captcha -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://distracted-nightingale-627e05.netlify.app/succes.html">
+                <input type="text" name="naam" placeholder="je naam *" required>
+                <input type="email" name="email&nbsp;adres" placeholder="je email *" required>
+                <input type="text" name="telefoonnummer" placeholder="je telefoonnummer">
+                <textarea name="bericht" placeholder="je bericht" cols="30" rows="6"></textarea>
+                <button type="submit">verstuur</button>
+           </form>     
+        </article>           
     </main>
 </body>
 </html>

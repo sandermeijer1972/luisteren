@@ -123,7 +123,8 @@ main {
         .logo {
             grid-area: L;
             height: 200px;
-            margin: auto auto 15px;           
+            margin: auto auto 15px;
+            align-content: flex-end;          
         }
     }
     section {
@@ -204,7 +205,7 @@ main {
     @media(min-width: 1060px) {
         margin-right: 20vw;        
     }
-    &:nth-child(odd) {
+    &:nth-child(even) {
         background-color: $color-three;
         @media(min-width: 1060px) {
             margin-left: 20vw;
@@ -216,5 +217,71 @@ main {
     }
     & + & {
         margin-top: 25px;
+    }
+}
+
+.contact {
+    background-color: $color-two;
+    color: white;
+    max-width: 1400px;
+    @media(min-width: 600px) {
+        padding: 10px;
+    }    
+    a {
+        color: white;
+    }
+    .adres {
+        font-size: 18px;
+        margin: 0 25px;
+        padding-top: 10px;
+        h2 {
+            margin: 10px 0;
+        }
+        .facebook a {
+            font-size: 42px;
+        }
+    }
+    form {
+        background-color: $color-three;
+        display: flex;
+        flex-direction: column;
+        padding: 2vw 4vw;
+        margin: 25px auto;
+        max-width: 600px;
+        input, textarea {
+            border: 0;
+            margin: 10px 0;
+            padding: 20px;
+            outline: none;
+            font-size: 16px;
+            font-family: monospace;
+            background-color: $color-one;
+        }        
+        button {
+            padding: 15px;
+            background-color: $color-five;
+            color: white;
+            font-size: 18px;
+            border: 0;
+            outline: none;
+            cursor: pointer;
+            width: 150px;
+            margin: 20px auto 0;
+            border-radius: 30px;
+        }
+        button:hover {
+            padding: 12px;
+            font-size: 24px;
+        }
+    }
+    .succes {
+        background-color: $color-three;
+        display: flex;
+        flex-direction: column;
+        padding: 2vw 4vw;
+        margin: 25px auto;
+        max-width: 600px;
+        font-size: 24px;
+        line-height: 1.5;
     }
 }
