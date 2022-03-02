@@ -87,6 +87,37 @@ main .title {
   }
 }
 
+.home section {
+  color: white;
+  font-size: 18px;
+  padding: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 450px;
+}
+.home section img {
+  width: 90%;
+  max-width: 300px;
+}
+.home .luisterkind {
+  background-color: #236ab9;
+}
+.home .marieke {
+  background-color: #183bf0;
+}
+.home .recensies {
+  background-color: #5a18c9;
+}
+.home .contactinfo {
+  background-color: #190934;
+}
+.home .contactinfo .icons {
+  font-size: 72px;
+  color: white;
+}
+
 .listening {
   background-color: #236ab9;
   color: white;
@@ -255,6 +286,12 @@ main .title {
 }
 .contact .adres .facebook a {
   font-size: 42px;
+  color: white;
+}
+.contact .adres .facebook a span {
+  background-color: #183bf0;
+  padding: 6px 15px 4px;
+  border-radius: 7px;
 }
 .contact form {
   background-color: #183bf0;

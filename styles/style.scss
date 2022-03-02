@@ -80,6 +80,39 @@ main {
     }
 }
 
+.home {
+    section {
+        color: white;
+        font-size: 18px;
+        padding: 10px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 450px;
+        img {
+            width: 90%;
+            max-width: 300px;            
+        }
+    }
+    .luisterkind {
+        background-color: $color-two;
+    }
+    .marieke {
+        background-color: $color-three;
+    }
+    .recensies {
+        background-color: $color-four;
+    }
+    .contactinfo {
+        background-color: $color-five;
+        .icons {
+            font-size: 72px;
+            color: white;
+        }
+    }    
+}
+
 .listening {
     background-color: $color-two;
     color: white;
@@ -237,8 +270,16 @@ main {
         h2 {
             margin: 10px 0;
         }
-        .facebook a {
+        .facebook {
+            a {
             font-size: 42px;
+            color: white;
+            span {
+                background-color: $color-three;
+                padding: 6px 15px 4px;
+                border-radius: 7px;
+            }
+            }
         }
     }
     form {
