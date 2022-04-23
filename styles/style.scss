@@ -16,25 +16,35 @@ a {
 
 header {
     padding: 0;
-    background-color: $color-four;
-    @media(min-width: 1060px) {
+    background-color: $color-three;
+    @media(min-width: 900px) {
         display: grid;
-        grid-template: auto / 600px auto;
-        padding: 0 10px;
+        grid-template: auto / 450px auto;
+        padding-left: 15vw;
     }
     .logo {
         background-color: white;
         margin: 0 auto;
+        text-align: center;                   
     }
 }
 
 nav {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 0;
-    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    @media(min-width: 900px) {
+        flex-direction: column;
+        padding-left: 8vw;
+        justify-content: space-around;
+    }
+
     a {
-        color: white;
+        color: #FFFFFF;
+    }
+    a:hover {
+        color: $color-five;
     }
     .menu {
         text-align: center;
@@ -43,18 +53,12 @@ nav {
         @media(min-width: 600px) {
             font-size: 23px;
         }    
-        @media(min-width: 1060px) {
+        @media(min-width: 900px) {
             display: flex;
-            align-items: flex-end;
-            justify-content: center;
-            margin: 0;
+            align-items: flex-start;
             padding: 0;
-            padding-bottom: 22px;
         }    
-    }    
-    .menu:hover {
-        background-color: $color-three;
-    }
+    }       
     .active {
         font-size: 18px;
         a {

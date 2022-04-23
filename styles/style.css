@@ -14,27 +14,39 @@ a {
 
 header {
   padding: 0;
-  background-color: #5a18c9;
+  background-color: #183bf0;
 }
-@media (min-width: 1060px) {
+@media (min-width: 900px) {
   header {
     display: grid;
-    grid-template: auto/600px auto;
-    padding: 0 10px;
+    grid-template: auto/450px auto;
+    padding-left: 15vw;
   }
 }
 header .logo {
   background-color: white;
   margin: 0 auto;
+  text-align: center;
 }
 
 nav {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  gap: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media (min-width: 900px) {
+  nav {
+    flex-direction: column;
+    padding-left: 8vw;
+    justify-content: space-around;
+  }
 }
 nav a {
-  color: white;
+  color: #FFFFFF;
+}
+nav a:hover {
+  color: #190934;
 }
 nav .menu {
   text-align: center;
@@ -46,18 +58,12 @@ nav .menu {
     font-size: 23px;
   }
 }
-@media (min-width: 1060px) {
+@media (min-width: 900px) {
   nav .menu {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin: 0;
+    align-items: flex-start;
     padding: 0;
-    padding-bottom: 22px;
   }
-}
-nav .menu:hover {
-  background-color: #183bf0;
 }
 nav .active {
   font-size: 18px;
