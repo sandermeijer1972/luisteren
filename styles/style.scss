@@ -144,10 +144,10 @@ main {
     }
     @media(min-width: 900px) {
         display: grid;
-        grid-template: 1fr auto / 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template: 1fr auto / 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-        "L L L L A A A"
-        "M M R R R C C";
+        "L L L A A A"
+        "M M R R C C";
         gap: 10px;
     }  
 }
