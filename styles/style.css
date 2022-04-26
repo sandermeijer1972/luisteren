@@ -153,10 +153,16 @@ main .title {
   gap: 25px;
 }
 @media (min-width: 900px) {
+  .home .contactinfo .icons {
+    grid-template: 1fr 1fr 1fr 1fr/1fr;
+    gap: 50px;
+  }
+}
+@media (min-width: 900px) {
   .home {
     display: grid;
-    grid-template: 1fr auto/1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "L L L A A A" "M M R R C C";
+    grid-template: 1fr auto/1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "L L A A C" "M M R R C";
     gap: 10px;
   }
 }
