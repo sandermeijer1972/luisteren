@@ -77,6 +77,11 @@ nav .active a {
     letter-spacing: 1px;
   }
 }
+@media (min-width: 900px) {
+  nav .active {
+    padding-left: 10px;
+  }
+}
 
 main {
   margin: 0;
@@ -101,17 +106,24 @@ main .title {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 450px;
 }
 .home section img {
   width: 90%;
   max-width: 300px;
 }
+@media (min-width: 600px) {
+  .home section {
+    margin-bottom: 25px;
+  }
+}
 .home .luisterkind {
   background-color: #236ab9;
 }
-.home .marieke {
+.home .access {
   background-color: #183bf0;
+}
+.home .marieke {
+  background-color: #190934;
 }
 .home .recensies {
   background-color: #5a18c9;
@@ -131,13 +143,23 @@ main .title {
   line-height: 1.5;
   padding: 15px;
 }
+.listening .logo {
+  width: 200px;
+  background-color: white;
+  border: 5px solid #d4e4f7;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media (min-width: 600px) {
   .listening {
     max-width: 600px;
     margin: 0 auto;
   }
 }
-@media (min-width: 1060px) {
+@media (min-width: 900px) {
   .listening {
     padding: 40px;
     max-width: 1400px;
@@ -167,22 +189,12 @@ main .title {
   .listening .logo {
     grid-area: L;
     height: 200px;
-    margin: auto auto 15px;
+    margin: auto 0 15px;
     align-content: flex-end;
   }
 }
 .listening section {
   margin-bottom: 15px;
-}
-.listening .logo {
-  width: 200px;
-  background-color: white;
-  border: 5px solid #d4e4f7;
-  border-radius: 50%;
-  margin: 0 auto 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .info {
@@ -198,7 +210,7 @@ main .title {
     margin: 0 auto;
   }
 }
-@media (min-width: 1060px) {
+@media (min-width: 900px) {
   .info {
     padding: 40px;
     max-width: 1400px;
@@ -246,9 +258,10 @@ main .title {
 @media (min-width: 600px) {
   .reviews {
     padding: 30px 15px 15px;
+    margin-bottom: 25px;
   }
 }
-@media (min-width: 1060px) {
+@media (min-width: 900px) {
   .reviews {
     margin-right: 20vw;
   }
@@ -256,7 +269,7 @@ main .title {
 .reviews:nth-child(even) {
   background-color: #183bf0;
 }
-@media (min-width: 1060px) {
+@media (min-width: 900px) {
   .reviews:nth-child(even) {
     margin-left: 20vw;
     margin-right: 0;
@@ -264,9 +277,6 @@ main .title {
 }
 .reviews section {
   margin-bottom: 15px;
-}
-.reviews + .reviews {
-  margin-top: 25px;
 }
 
 .contact {
@@ -298,6 +308,9 @@ main .title {
   background-color: #183bf0;
   padding: 6px 15px 4px;
   border-radius: 7px;
+}
+.contact .adres .facebook a span:hover {
+  border: 3px solid #183bf0;
 }
 .contact form {
   background-color: #183bf0;
