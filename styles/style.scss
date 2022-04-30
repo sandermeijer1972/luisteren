@@ -27,6 +27,9 @@ header {
         margin: 0 auto;
         text-align: center;                   
     }
+    .logo:hover {
+        transform: scale(1.02);
+    } 
 }
 
 nav {
@@ -105,11 +108,15 @@ main {
             margin-bottom: 25px;
         }
         @media(min-width: 900px) {
-            margin: 0;
+            margin: 0;            
         }
     }
     section:hover {
         cursor: pointer;
+        @media(min-width: 900px) {
+            box-shadow: none;            
+            transform: scale(0.99);
+        }
     }
     .luisterkind {
         background-color: $color-two;
