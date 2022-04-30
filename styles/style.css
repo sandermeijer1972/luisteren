@@ -128,7 +128,7 @@ main .title {
 .home section:hover {
   cursor: pointer;
 }
-@media (min-width: 900px) {
+@media (min-width: 600px) {
   .home section:hover {
     box-shadow: none;
     transform: scale(0.99);
