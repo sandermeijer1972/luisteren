@@ -55,6 +55,7 @@ nav .menu {
   text-align: center;
   padding: 10px 5px;
   font-size: 17px;
+  color: #FFFFFF;
 }
 @media (min-width: 600px) {
   nav .menu {
@@ -67,6 +68,10 @@ nav .menu {
     align-items: flex-start;
     padding: 0;
   }
+}
+nav .menu:hover {
+  color: #190934;
+  cursor: pointer;
 }
 nav .active {
   font-size: 18px;
@@ -235,6 +240,26 @@ main .title {
 }
 .listening section {
   margin-bottom: 15px;
+}
+
+.bars {
+  background-color: #236ab9;
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 15px;
+}
+@media (min-width: 600px) {
+  .bars {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 900px) {
+  .bars {
+    padding: 40px;
+    max-width: 1400px;
+  }
 }
 
 .info {
