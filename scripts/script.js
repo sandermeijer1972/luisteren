@@ -6,6 +6,7 @@ const accessHome = document.getElementById('accesshome');
 const overNav = document.getElementById('overnav');
 const overHome = document.getElementById('overhome');
 const recensiesNav = document.getElementById('recensiesnav');
+const recensiesHome = document.getElementById('recensieshome');
 const contactNav = document.getElementById('contactnav');
 
 const clearMenu = () => {
@@ -91,3 +92,22 @@ const addOverMijToDOM = () => {
 
 overNav.addEventListener('click', addOverMijToDOM);
 overHome.addEventListener('click', addOverMijToDOM);
+
+
+const addRecensiesToDOM = () => {
+    clearMenu();
+    recensiesNav.classList.add('active');
+    recensiesText.forEach(recensie => {
+        const newArticle = document.createElement('article');
+        newArticle.classList.add('reviews');
+        recensie.forEach(item => {
+            const newSection = document.createElement('section');
+            newSection.innerText = item;
+            newArticle.appendChild(newSection);
+        });
+        main.appendChild(newArticle);
+    });
+};
+
+recensiesNav.addEventListener('click', addRecensiesToDOM);
+recensiesHome.addEventListener('click', addRecensiesToDOM);
