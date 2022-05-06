@@ -383,14 +383,22 @@ main {
             font-size: 24px;
         }
     }
-    .succes {
-        background-color: $color-three;
-        display: flex;
-        flex-direction: column;
-        padding: 2vw 4vw;
+    
+}
+
+.succes {
+    background-color: $color-four;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    margin: 30px 10px;
+    max-width: 600px;
+    font-size: 24px;
+    line-height: 1.5;
+    color: white;
+    border-radius: 10px;
+    @media (min-width: 600px) {
         margin: 25px auto;
         max-width: 600px;
-        font-size: 24px;
-        line-height: 1.5;
     }
 }
