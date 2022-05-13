@@ -61,7 +61,13 @@ nav {
             display: flex;
             align-items: flex-start;
             padding: 0;
-        }    
+        }
+        span {
+            display: none;
+            @media(min-width: 1200px) {
+                display: contents;
+            }
+        }  
     }
     .menu:hover {
         color: $color-five;
@@ -69,9 +75,6 @@ nav {
     }       
     .active {
         font-size: 18px;
-        a {
-            color: $color-one;
-        }
         @media(min-width: 600px) {
             font-size: 24px;
             letter-spacing: 1px;
@@ -84,15 +87,18 @@ nav {
 
 main {
     margin: 0;
-    .title {
-        text-align: center;
-        color: $color-five;
-        text-decoration: underline;
-    }
     @media(min-width: 600px) {
         margin: 60px auto;
         width: 80vw;
     }
+}
+
+.price {
+    margin: 40px auto 20px;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
 }
 
 .home {
@@ -180,21 +186,26 @@ main {
         align-items: center;
         justify-content: center;
     }
+    .price {
+        background-color: $color-three;
+    }
     @media(min-width: 600px) {
         max-width: 600px;
         margin: 0 auto;
+        margin-bottom: 25px;
     }
     @media(min-width: 900px) {
         padding: 40px;
         max-width: 1400px;
         display: grid;
-        grid-template: auto auto auto auto auto / auto 1fr;
+        grid-template: auto auto auto auto auto auto/ auto 1fr;
         grid-template-areas:
         "A L"
         "B L"
         "C L"
         "D D"
-        "E E";
+        "E E"
+        "P P";
         h1 {
             grid-area: A;
         }
@@ -220,10 +231,94 @@ main {
             margin: auto 0 15px;
             align-content: flex-end;          
         }
+        .price {
+            grid-area: P;            
+        }
     }
     section {
         margin-bottom: 15px;
     }    
+}
+
+.birth {
+    background-color: $color-four;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 15px;
+    section {
+        margin-bottom: 15px;
+    }
+    .pregnant {
+        width: 300px;
+        margin: 0 auto 15px;
+        img {
+            border-radius: 10px;
+        }
+    }
+    @media(min-width: 600px) {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    @media(min-width: 900px) {
+        padding: 40px;
+        max-width: 1400px;
+        display: grid;
+        grid-template: auto auto auto auto auto auto auto auto auto auto/ 1fr auto;
+        grid-template-areas:
+        "A P"
+        "B P"
+        "C P"
+        "D D"
+        "E E"
+        "F F"
+        "G G"
+        "H H"
+        "I I"
+        "J J";
+        h1 {
+            grid-area: A;
+        }
+        section:nth-child(2) {
+            grid-area: B;
+        }
+        .pregnant {
+            grid-area: P;
+            margin: auto 10px 0;
+        }
+        section:nth-child(4) {
+            grid-area: C;
+        }
+        h4:nth-child(5) {
+            grid-area: D;
+        }
+        ul {
+            grid-area: E;
+        }
+        section:nth-child(7) {
+            grid-area: F;
+        }
+        h4:nth-child(8) {
+            grid-area: G;
+        }
+        ol {
+            grid-area: H;
+        }
+        section:nth-child(10) {
+            grid-area: I;
+        }
+        .price {
+            grid-area: J;
+        }
+    }    
+    h4 {
+        font-style: italic;
+        margin-top: 35px;
+    }
+    .price {
+        background-color: $color-five;
+    }
 }
 
 .bars {

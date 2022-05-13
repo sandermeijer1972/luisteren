@@ -69,15 +69,20 @@ nav .menu {
     padding: 0;
   }
 }
+nav .menu span {
+  display: none;
+}
+@media (min-width: 1200px) {
+  nav .menu span {
+    display: contents;
+  }
+}
 nav .menu:hover {
   color: #190934;
   cursor: pointer;
 }
 nav .active {
   font-size: 18px;
-}
-nav .active a {
-  color: #d4e4f7;
 }
 @media (min-width: 600px) {
   nav .active {
@@ -94,16 +99,19 @@ nav .active a {
 main {
   margin: 0;
 }
-main .title {
-  text-align: center;
-  color: #190934;
-  text-decoration: underline;
-}
 @media (min-width: 600px) {
   main {
     margin: 60px auto;
     width: 80vw;
   }
+}
+
+.price {
+  margin: 40px auto 20px;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
 }
 
 .home section {
@@ -198,10 +206,14 @@ main .title {
   align-items: center;
   justify-content: center;
 }
+.listening .price {
+  background-color: #183bf0;
+}
 @media (min-width: 600px) {
   .listening {
     max-width: 600px;
     margin: 0 auto;
+    margin-bottom: 25px;
   }
 }
 @media (min-width: 900px) {
@@ -209,8 +221,8 @@ main .title {
     padding: 40px;
     max-width: 1400px;
     display: grid;
-    grid-template: auto auto auto auto auto/auto 1fr;
-    grid-template-areas: "A L" "B L" "C L" "D D" "E E";
+    grid-template: auto auto auto auto auto auto/auto 1fr;
+    grid-template-areas: "A L" "B L" "C L" "D D" "E E" "P P";
   }
   .listening h1 {
     grid-area: A;
@@ -237,9 +249,87 @@ main .title {
     margin: auto 0 15px;
     align-content: flex-end;
   }
+  .listening .price {
+    grid-area: P;
+  }
 }
 .listening section {
   margin-bottom: 15px;
+}
+
+.birth {
+  background-color: #5a18c9;
+  color: white;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 15px;
+}
+.birth section {
+  margin-bottom: 15px;
+}
+.birth .pregnant {
+  width: 300px;
+  margin: 0 auto 15px;
+}
+.birth .pregnant img {
+  border-radius: 10px;
+}
+@media (min-width: 600px) {
+  .birth {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 900px) {
+  .birth {
+    padding: 40px;
+    max-width: 1400px;
+    display: grid;
+    grid-template: auto auto auto auto auto auto auto auto auto auto/1fr auto;
+    grid-template-areas: "A P" "B P" "C P" "D D" "E E" "F F" "G G" "H H" "I I" "J J";
+  }
+  .birth h1 {
+    grid-area: A;
+  }
+  .birth section:nth-child(2) {
+    grid-area: B;
+  }
+  .birth .pregnant {
+    grid-area: P;
+    margin: auto 10px 0;
+  }
+  .birth section:nth-child(4) {
+    grid-area: C;
+  }
+  .birth h4:nth-child(5) {
+    grid-area: D;
+  }
+  .birth ul {
+    grid-area: E;
+  }
+  .birth section:nth-child(7) {
+    grid-area: F;
+  }
+  .birth h4:nth-child(8) {
+    grid-area: G;
+  }
+  .birth ol {
+    grid-area: H;
+  }
+  .birth section:nth-child(10) {
+    grid-area: I;
+  }
+  .birth .price {
+    grid-area: J;
+  }
+}
+.birth h4 {
+  font-style: italic;
+  margin-top: 35px;
+}
+.birth .price {
+  background-color: #190934;
 }
 
 .bars {

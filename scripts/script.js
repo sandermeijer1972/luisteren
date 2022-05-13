@@ -20,9 +20,7 @@ const clearMenu = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
-const addLuisterkindToDOM = () => {    
-    clearMenu();
-    luisterNav.classList.add('active');
+const makeListeningArticle = () => {
     const newArticle = document.createElement('article');
     newArticle.classList.add('listening');
     const newH1 = document.createElement('h1');
@@ -42,7 +40,71 @@ const addLuisterkindToDOM = () => {
         newSection.innerText = listenText[i];
         newArticle.appendChild(newSection);
     };
-    main.appendChild(newArticle);
+    const newPrice = document.createElement('div');
+    newPrice.classList.add('price');
+    newPrice.innerText = listenText[5];
+    newArticle.appendChild(newPrice);
+    return newArticle;
+};
+
+const makeBirthArticle = () => {
+    const newArticle = document.createElement('article');
+    newArticle.classList.add('birth');
+    const newH1 = document.createElement('h1');
+    newH1.innerText = birthText[0];
+    newArticle.appendChild(newH1);
+    const firstSection = document.createElement('section');
+    firstSection.innerText = birthText[1];
+    newArticle.appendChild(firstSection); 
+    const newDiv = document.createElement('div');
+    newDiv.classList.add('pregnant');   
+    const newImg = document.createElement('img');
+    newImg.src = './images/buik.jpg';
+    newDiv.appendChild(newImg);    
+    newArticle.appendChild(newDiv);
+    const secondSection = document.createElement('section');
+    secondSection.innerText = birthText[2];
+    newArticle.appendChild(secondSection);
+    const questionsH4 = document.createElement('h4');
+    questionsH4.innerText = birthText[3][0];
+    newArticle.appendChild(questionsH4);
+    const newUL = document.createElement('ul');
+    for (i=1; i<birthText[3].length; i++) {
+        const newLi = document.createElement('li');
+        newLi.innerText = birthText[3][i];
+        newUL.appendChild(newLi);
+    };
+    newArticle.appendChild(newUL);
+    const questionsSection = document.createElement('section');
+    questionsSection.innerText = birthText[4];
+    newArticle.appendChild(questionsSection);
+    const tuningH4 = document.createElement('h4');
+    tuningH4.innerText = birthText[5][0];
+    newArticle.appendChild(tuningH4);
+    const newOL = document.createElement('ol');
+    for (i=1; i<birthText[5].length; i++) {
+        const newLi = document.createElement('li');
+        newLi.innerText = birthText[5][i];
+        newOL.appendChild(newLi);
+    };
+    newArticle.appendChild(newOL);
+    const tuningSection = document.createElement('section');
+    tuningSection.innerText = birthText[6];
+    newArticle.appendChild(tuningSection);
+    const newPrice = document.createElement('div');
+    newPrice.classList.add('price');
+    newPrice.innerText = birthText[7];
+    newArticle.appendChild(newPrice);
+    return newArticle;
+};
+
+const addLuisterkindToDOM = () => {    
+    clearMenu();
+    luisterNav.classList.add('active');
+    const listenArticle = makeListeningArticle();
+    main.appendChild(listenArticle);
+    const birthArticle = makeBirthArticle();
+    main.appendChild(birthArticle);
 };
 
 luisterNav.addEventListener('click', addLuisterkindToDOM);
