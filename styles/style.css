@@ -344,7 +344,7 @@ main {
   margin-bottom: 15px;
 }
 .bars .photobars {
-  max-width: 350px;
+  max-width: 375px;
   margin: 0 auto 15px;
 }
 .bars .photobars img {
@@ -387,11 +387,9 @@ main {
     padding: 40px;
     max-width: 1400px;
     display: grid;
-    grid-template: auto auto auto auto auto auto auto/auto 1fr;
-    grid-template-areas: "A A" "B B" "C D" "E E" "F G" "H G" "I I";
-  }
-  .bars .photobars {
-    max-width: 290px;
+    grid-template: auto auto auto auto auto auto auto/1fr 1fr 1fr;
+    grid-template-areas: "A A A" "B B B" "E E E" "C D G" "F F F" "H H H" "I I I";
+    gap: 10px;
   }
   .bars h1 {
     grid-area: A;
@@ -416,19 +414,10 @@ main {
   }
   .bars .photobars:nth-child(7) {
     grid-area: G;
-    width: 250px;
   }
   .bars .pricelist {
     grid-area: I;
     width: 450px;
-  }
-}
-@media (min-width: 1000px) {
-  .bars .photobars {
-    max-width: 350px;
-  }
-  .bars .photobars:nth-child(7) {
-    width: 250px;
   }
 }
 
@@ -501,14 +490,17 @@ main {
     margin-right: 20vw;
   }
 }
-.reviews:nth-child(even) {
-  background-color: #183bf0;
-}
 @media (min-width: 900px) {
   .reviews:nth-child(even) {
     margin-left: 20vw;
     margin-right: 0;
   }
+}
+.reviews:nth-child(3n+0) {
+  background-color: #5a18c9;
+}
+.reviews:nth-child(3n+1) {
+  background-color: #183bf0;
 }
 .reviews section {
   margin-bottom: 15px;

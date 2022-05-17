@@ -52,13 +52,13 @@ const accessText = [
         'Behandeling Access Bars 30 minuten',        
         'Behandeling Access Bars 60 minuten',        
         'Roller essentiële olie 10ml',        
-        'Spray essentiële olie',        
+        'Spray essentiële olie 20ml',        
     ],
     [
         '40,00',
         '67,50',
         '7,95',
-        '5,95',
+        '7,95',
     ],
 ];
 
@@ -92,5 +92,9 @@ const recensiesText = [
         'Met onze jongste zoon hebben wij wat problemen en konden wel wat hulp gebruiken. Na haar afstemming en haar verhaal en antwoorden van onze zoon, konden wij zeker weer wat stappen verder. Het bracht duidelijkheid over het gedrag van onze zoon.',
         'En het gekke is dat hij zelf ook meer momenten van rust heeft die hij voorheen niet had.',
         'Het was een bijzondere ervaring met een positieve kracht. Bedankt Marieke!',
+    ],
+    [
+        'Wat is het fijn om de Access Bars mee te maken! Dat de ontspanningswarmte zo snel je lichaam in komt, en je zo snel je rust hebt. Met 5 start drukpunten al. Dan moet de rest nog komen, ongelooflijk gewoon. Zo fijn en ontspannen, het gevoel dat je echt je rust weer hebt.',
+        'Zeker aan te bevelen en voor herhaling vatbaar! Bedankt Marieke!',
     ],
 ];
