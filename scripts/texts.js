@@ -44,12 +44,31 @@ const birthText = [
 
 const accessText = [
     'Wat is Access Bars?',
-    'Hier komt het verhaal over Access Bars',
+    'Access Bars is een energetisch lichaamsproces voor iedereen die meer rust, ruimte en ontspanning in lichaam en geest wil ervaren. Zeker in de drukke maatschappij van tegenwoordig is het fijn als er weer meer balans is tussen inspanning en ontspanning.',
+    'Access Bars zijn 32 drukpunten die energiebanen vormen door en om het hoofd. Hierin liggen al je ideeën, gedachten, overtuigingen en emoties opgeslagen. Ieder drukpunt staat voor een specifieke context in je leven. Zo heb je drukpunten die staan voor het lichaam, controle, communicatie, vreugde, verdriet, dankbaarheid, daadkracht, heling, veroudering, creativiteit etc.',
+    'Je gaat gewoon lekker liggen en laat alles over je heen komen. Aan het begin van de sessie kies je een Essentiële olie uit. Je kunt geen fouten maken. De olie die jij kiest, is de olie die jij op dat moment nodig hebt. Ook is het mogelijk om de olie na afloop aan te schaffen. Mogelijkheden en prijzen kun je hieronder vinden.',
+    'Meestal vraagt je lichaam na 4 weken weer om een nieuwe behandeling. Dit is uiteraard vrijblijvend.',
+    [
+        'Behandeling Access Bars 30 minuten',        
+        'Behandeling Access Bars 60 minuten',        
+        'Roller essentiële olie 10ml',        
+        'Spray essentiële olie',        
+    ],
+    [
+        '40,00',
+        '67,50',
+        '7,95',
+        '5,95',
+    ],
 ];
 
 const infoText = [
     'Wie ben ik?',
-    'Ik ben Marieke Onderwater, 37 jaar en moeder van 2 prachtige kinderen. Een koningsgezin, een jongen en meid van 3 en 5 jaar oud. Daarnaast werk ik nog 2 dagen in de kinderopvang.',
+    [
+        'Ik ben Marieke Onderwater, ',
+        ' jaar en moeder van 2 prachtige kinderen. Een koningsgezin, een jongen en meid van ',        
+        ' jaar oud. Daarnaast werk ik nog 2 dagen in de kinderopvang.',
+    ],
     'Toen ik hoorde van Luisterkind, heb ik zelf direct een aantal keer een afstemming aangevraagd voor mijn eigen kinderen. Direct zag ik verschil, aan de energie van mijn kinderen en antwoorden van mijn vragen werden opgelost. Dit vond ik zo iets bijzonders! Na enige tijd hoorde ik van de opleiding Luisterkind, en dacht meteen: “Ja, dit ben ik en dit wil ik worden!”',
     'Altijd al help ik graag anderen, geef ik tips vanuit mijn eigen intuïtie. Het zit in de aard van het beestje zeggen ze dan. Nu ik deze opleiding heb kunnen afronden kan ik er mijn werk van maken. En ik ben dankbaar en blij dat ik meer moeders en vaders mag gaan helpen. Want ik weet als geen ander dat het niet altijd makkelijk is, het opvoeden van je eigen kinderen.',
 ];

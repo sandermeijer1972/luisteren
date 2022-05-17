@@ -112,6 +112,7 @@ main {
   color: white;
   font-size: 20px;
   text-align: center;
+  border-radius: 10px;
 }
 
 .home section {
@@ -286,7 +287,7 @@ main {
     padding: 40px;
     max-width: 1400px;
     display: grid;
-    grid-template: auto auto auto auto auto auto auto auto auto auto/1fr auto;
+    grid-template: auto auto auto auto auto auto auto auto auto auto/auto 1fr;
     grid-template-areas: "A P" "B P" "C P" "D D" "E E" "F F" "G G" "H H" "I I" "J J";
   }
   .birth h1 {
@@ -339,16 +340,95 @@ main {
   line-height: 1.5;
   padding: 15px;
 }
+.bars section {
+  margin-bottom: 15px;
+}
+.bars .photobars {
+  max-width: 350px;
+  margin: 0 auto 15px;
+}
+.bars .photobars img {
+  border-radius: 10px;
+}
+.bars .pricelist {
+  background-color: #183bf0;
+  margin: 40px auto 20px;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  list-style-type: none;
+}
+.bars .pricelist li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.bars .pricelist li .pricetag {
+  display: grid;
+  grid-template-columns: 15px 55px;
+}
+.bars .pricelist li .pricetag .itemprice {
+  text-align: right;
+}
 @media (min-width: 600px) {
   .bars {
     max-width: 600px;
     margin: 0 auto;
+  }
+  .bars .pricelist {
+    width: 430px;
   }
 }
 @media (min-width: 900px) {
   .bars {
     padding: 40px;
     max-width: 1400px;
+    display: grid;
+    grid-template: auto auto auto auto auto auto auto/auto 1fr;
+    grid-template-areas: "A A" "B B" "C D" "E E" "F G" "H G" "I I";
+  }
+  .bars .photobars {
+    max-width: 290px;
+  }
+  .bars h1 {
+    grid-area: A;
+  }
+  .bars section:nth-child(2) {
+    grid-area: B;
+  }
+  .bars .photobars:nth-child(3) {
+    grid-area: C;
+  }
+  .bars .photobars:nth-child(5) {
+    grid-area: D;
+  }
+  .bars section:nth-child(4) {
+    grid-area: E;
+  }
+  .bars section:nth-child(6) {
+    grid-area: F;
+  }
+  .bars section:nth-child(8) {
+    grid-area: H;
+  }
+  .bars .photobars:nth-child(7) {
+    grid-area: G;
+    width: 250px;
+  }
+  .bars .pricelist {
+    grid-area: I;
+    width: 450px;
+  }
+}
+@media (min-width: 1000px) {
+  .bars .photobars {
+    max-width: 350px;
+  }
+  .bars .photobars:nth-child(7) {
+    width: 250px;
   }
 }
 

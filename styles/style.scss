@@ -99,6 +99,7 @@ main {
     color: white;
     font-size: 20px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .home {
@@ -265,7 +266,7 @@ main {
         padding: 40px;
         max-width: 1400px;
         display: grid;
-        grid-template: auto auto auto auto auto auto auto auto auto auto/ 1fr auto;
+        grid-template: auto auto auto auto auto auto auto auto auto auto/ auto 1fr;
         grid-template-areas:
         "A P"
         "B P"
@@ -327,13 +328,99 @@ main {
     font-size: 18px;
     line-height: 1.5;
     padding: 15px;
+    section {
+        margin-bottom: 15px;
+    }
+    .photobars {
+        max-width: 350px;
+        margin: 0 auto 15px;
+        img {
+            border-radius: 10px;
+        }        
+    }
+    .pricelist {
+        background-color: $color-three;
+        margin: 40px auto 20px;
+        padding: 10px;
+        color: white;
+        font-size: 20px;       
+        border-radius: 10px;        
+        list-style-type: none;
+        li {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 5px;
+            .pricetag {
+                display: grid;
+                grid-template-columns: 15px 55px;
+                .itemprice {
+                    text-align: right;
+                }
+            }
+        }
+    }
     @media(min-width: 600px) {
         max-width: 600px;
         margin: 0 auto;
+        .pricelist {
+            width: 430px;            
+        }
     }
     @media(min-width: 900px) {
         padding: 40px;
         max-width: 1400px;
+        display: grid;
+        grid-template: auto auto auto auto auto auto auto/ auto 1fr;
+        grid-template-areas:
+        "A A"
+        "B B"
+        "C D"
+        "E E"
+        "F G"
+        "H G"
+        "I I";
+        .photobars {
+            max-width: 290px;
+        }
+        h1 {
+            grid-area: A;
+        }
+        section:nth-child(2) {
+            grid-area: B;
+        }
+        .photobars:nth-child(3) {
+            grid-area: C;
+        }
+        .photobars:nth-child(5) {
+            grid-area: D;
+        }
+        section:nth-child(4) {
+            grid-area: E;
+        }
+        section:nth-child(6) {
+            grid-area: F;
+        }
+        section:nth-child(8) {
+            grid-area: H;
+        }
+        .photobars:nth-child(7) {
+            grid-area: G;
+            width: 250px;
+        }
+        .pricelist {
+            grid-area: I;
+            width: 450px;
+        }
+    }
+    @media (min-width: 1000px) {
+        .photobars {
+            max-width: 350px;
+        }
+        .photobars:nth-child(7) {
+            width: 250px;
+        }
     }
 }
 
