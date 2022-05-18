@@ -97,4 +97,8 @@ const recensiesText = [
         'Wat is het fijn om de Access Bars mee te maken! Dat de ontspanningswarmte zo snel je lichaam in komt, en je zo snel je rust hebt. Met 5 start drukpunten al. Dan moet de rest nog komen, ongelooflijk gewoon. Zo fijn en ontspannen, het gevoel dat je echt je rust weer hebt.',
         'Zeker aan te bevelen en voor herhaling vatbaar! Bedankt Marieke!',
     ],
+    [
+        'Ons kindje van drie vertoonde gedrag dat we hebben laten onderzoeken door professionals. Dit duurde vele weken door wachtlijsten, corona en de vele onderzoeken.',
+        'Een paar jaar later wonnen we een luisterkindafstemming van Marieke. Zij gaf exact hetzelfde aan als de "professionals". Heel bijzonder dat Marieke deze inzichten kan geven door af te stemmen en te vertalen. Zeker de moeite waard als je tips nodig hebt of als je even vast bent gelopen!',
+    ],
 ];

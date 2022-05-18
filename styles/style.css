@@ -499,7 +499,7 @@ main {
 .reviews:nth-child(3n+0) {
   background-color: #5a18c9;
 }
-.reviews:nth-child(3n+1) {
+.reviews:nth-child(3n+2) {
   background-color: #183bf0;
 }
 .reviews section {
