@@ -1,0 +1,80 @@
+.birth {
+    background-color: $color-four;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 15px;
+    section {
+        margin-bottom: 15px;
+    }
+    .pregnant {
+        width: 300px;
+        margin: 0 auto 15px;
+        img {
+            border-radius: 10px;
+        }
+    }
+    @media(min-width: 600px) {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    @media(min-width: 900px) {
+        padding: 40px;
+        max-width: 1400px;
+        display: grid;
+        grid-template: auto auto auto auto auto auto auto auto auto auto/ auto 1fr;
+        grid-template-areas:
+        "A P"
+        "B P"
+        "C P"
+        "D D"
+        "E E"
+        "F F"
+        "G G"
+        "H H"
+        "I I"
+        "J J";
+        h1 {
+            grid-area: A;
+        }
+        section:nth-child(2) {
+            grid-area: B;
+        }
+        .pregnant {
+            grid-area: P;
+            margin: auto 10px 0;
+        }
+        section:nth-child(4) {
+            grid-area: C;
+        }
+        h4:nth-child(5) {
+            grid-area: D;
+        }
+        ul {
+            grid-area: E;
+        }
+        section:nth-child(7) {
+            grid-area: F;
+        }
+        h4:nth-child(8) {
+            grid-area: G;
+        }
+        ol {
+            grid-area: H;
+        }
+        section:nth-child(10) {
+            grid-area: I;
+        }
+        .price {
+            grid-area: J;
+        }
+    }    
+    h4 {
+        font-style: italic;
+        margin-top: 35px;
+    }
+    .price {
+        background-color: $color-five;
+    }
+}

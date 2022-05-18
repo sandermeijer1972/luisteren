@@ -1,0 +1,70 @@
+header {
+    padding: 0;
+    background-color: $color-three;
+    @media(min-width: 900px) {
+        display: grid;
+        grid-template: auto / 450px auto;
+        padding-left: 15vw;
+    }
+    .logo {
+        background-color: white;
+        margin: 0 auto;
+        text-align: center;                   
+    }
+    .logo:hover {
+        transform: scale(1.02);
+    } 
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    @media(min-width: 900px) {
+        flex-direction: column;
+        padding-left: 8vw;
+        justify-content: space-around;
+    }
+
+    a {
+        color: #FFFFFF;
+    }
+    a:hover {
+        color: $color-five;
+    }
+    .menu {
+        text-align: center;
+        padding: 10px 5px;
+        font-size: 17px;
+        color: #FFFFFF;
+        @media(min-width: 600px) {
+            font-size: 23px;
+        }    
+        @media(min-width: 900px) {
+            display: flex;
+            align-items: flex-start;
+            padding: 0;
+        }
+        span {
+            display: none;
+            @media(min-width: 1200px) {
+                display: contents;
+            }
+        }  
+    }
+    .menu:hover {
+        color: $color-five;
+        cursor: pointer;
+    }       
+    .active {
+        font-size: 18px;
+        @media(min-width: 600px) {
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+        @media(min-width: 900px) {
+            padding-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.info {
+    background-color: $color-two;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 15px;
+    @media(min-width: 600px) {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    @media(min-width: 900px) {
+        padding: 40px;
+        max-width: 1400px;
+        display: grid;
+        grid-template: auto auto auto auto / auto 1fr;
+        grid-template-areas:
+        "H P"
+        "F P"
+        "S P"
+        "T T";
+        h1 {
+            grid-area: H;
+        }
+        section:nth-child(2) {
+            grid-area: F;
+            margin-right: 40px;
+            margin-bottom: 10px;
+        }
+        section:nth-child(4) {
+            grid-area: S;
+            margin-right: 40px;
+            margin-bottom: 10px;
+        }
+        section:nth-child(5) {
+            grid-area: T;
+        }
+        .photo {
+            grid-area: P;
+            width: 250px;
+            margin: auto 0 10px;
+        }
+    }    
+    section {
+        margin-bottom: 15px;
+    }
+    .photo {
+        margin-bottom: 15px;
+    }
+}

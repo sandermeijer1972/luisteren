@@ -1,0 +1,30 @@
+.reviews {
+    background-color: $color-two;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 15px;
+    max-width: 1400px;
+    @media(min-width: 600px) {
+        padding: 30px 15px 15px;
+        margin-bottom: 25px;
+    }
+    @media(min-width: 900px) {
+        margin-right: 20vw;        
+    }
+    &:nth-child(even) {        
+        @media(min-width: 900px) {
+            margin-left: 20vw;
+            margin-right: 0;
+        }
+    }
+    &:nth-child(3n+0) {
+        background-color: $color-four;
+    }
+    &:nth-child(3n+2) {
+        background-color: $color-three;
+    }
+    section {
+        margin-bottom: 15px;
+    }    
+}
