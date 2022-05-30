@@ -55,8 +55,8 @@ const accessText = [
         'Spray essentiële olie 20ml',        
     ],
     [
-        '40,00',
-        '67,50',
+        '30,00',
+        '45,00',
         '7,95',
         '7,95',
     ],
