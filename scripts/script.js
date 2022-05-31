@@ -282,7 +282,7 @@ const makeForm = () => {
     const nextInput = document.createElement('input');
     nextInput.type = 'hidden';
     nextInput.name = '_next';
-    nextInput.value = 'https://distracted-nightingale-627e05.netlify.app/index1.html';
+    nextInput.value = 'https://www.mariekeonderwater.nl/index1.html'; //https://distracted-nightingale-627e05.netlify.app/index1.html
     newForm.appendChild(nextInput);
     const nameInput = document.createElement('input');
     nameInput.type = 'text';
