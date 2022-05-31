@@ -267,7 +267,7 @@ const makeAdresSection = () => {
 
 const makeForm = () => {
     const newForm = document.createElement('form');
-    newForm.action = 'https://formsubmit.co/d207706da69d2e5af926c3ecfff61e12';
+    newForm.action = 'https://formsubmit.co/cc1af60146d17a1f98fe8c0620f598b6';
     newForm.method = 'POST';
     const honeyInput = document.createElement('input');
     honeyInput.type = 'text';
